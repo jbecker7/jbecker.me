@@ -1,0 +1,252 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Jonathan Becker" description="About Jonathan Becker Lorem Ipsum">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for checking out my website! Look below to read more about me."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Jonathan Becker at work with a colleague"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+					Hi! My name is Jonathan. I'm a rising senior at Claremont McKenna College looking for
+					New Grad positions for after I graduate. I'm passionate about developing good software,
+					and I particularly enjoy the process of building all components of something from
+					scratch and seeing how they come together.
+
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Experience</h2>
+				<div class="content">
+					<ul>
+					<li> Chorus Sleep: Software Engineer Intern </li>
+					<li> Dasion: Software Engineer Intern </li>
+					<li> Clocky: Web Development/ECommerce Intern </li>
+					<li> Claremont McKenna College: Algorithms Research Assistant </li>
+					<li> Harvey Mudd College: Grader/Tutor (Intro CS, Computing Practices, Projects, and People, CS Clinic)</li>
+
+
+
+
+					</ul>
+				</div>
+
+
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p>Claremont McKenna College (2020-2024)</p>
+					Relevant Courework:<ul>
+					<li>Graph Algorithms</li>
+  <li>Data Structures</li>
+  <li>Machine Learning</li>
+  <li>Discrete Mathematics</li>
+  <li>Computer Science for Insight</li>
+  <li>Computer Science Colloquium</li>
+  <li>Programming Practicum</li>
+</ul>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<h5>Languages:</h5>
+<ul>
+  <li>Python</li>
+  <li>JavaScript</li>
+  <li>TypeScript</li>
+  <li>HTML/CSS/Markdown</li>
+  <li>Go</li>
+  <li>Java</li>
+  <li>Swift</li>
+  <li>Bash</li>
+  <li>Fish</li>
+  <li>PostgreSQL</li>
+</ul>
+
+<h5>Frameworks:</h5>
+<ul>
+  <li>React</li>
+  <li>Astro</li>
+  <li>Vue</li>
+</ul>
+
+<h5>Technologies:</h5>
+<ul>
+  <li>Git</li>
+  <li>Vim/NeoVim</li>
+  <li>GitHub</li>
+  <li>VSCode/VSCodium</li>
+  <li>Sublime Text</li>
+  <li>XCode</li>
+  <li>Docker</li>
+  <li>Postman</li>
+  <li>VirtualBox</li>
+</ul>
+
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Hobbies/Interests</h2>
+				<div class="content">
+					<ul>
+  <li>History:
+    <ul>
+      <li>Qing China</li>
+      <li>European Age of Enlightenment</li>
+    </ul>
+  </li>
+  <li>Philosophy:
+    <ul>
+      <li>Stoicism</li>
+      <li>Nietzsche</li>
+      <li>Camus</li>
+    </ul>
+  </li>
+  <li>International Relations:
+    <ul>
+      <li>East Asia especially</li>
+    </ul>
+  </li>
+  <li>Reading:
+    <ul>
+      <li>Murakami</li>
+      <li>Peter Hessler</li>
+      <li>David Foster Wallace</li>
+    </ul>
+  </li>
+  <li>Music:
+    <ul>
+      <li>Korean Trot Music</li>
+      <li>New Wave Music</li>
+      <li>City Pop</li>
+      <li>Baroque</li>
+      <li>KPop</li>
+    </ul>
+  </li>
+  <li>Language Learning:
+    <ul>
+      <li>Chinese</li>
+      <li>Korean</li>
+      <li>Spanish</li>
+    </ul>
+  </li>
+  <li>Gaming:
+    <ul>
+      <li>Persona</li>
+      <li>Zelda</li>
+      <li>Mother</li>
+      <li>Pokemon</li>
+    </ul>
+  </li>
+  <li>Food:
+    <ul>
+      <li>煲仔饭/claypot rice is my favorite</li>
+    </ul>
+  </li>
+  <li>Coffee:
+    <ul>
+      <li>Pour Over</li>
+      <li>Espresso</li>
+    </ul>
+  </li>
+  <li>Tea:
+    <ul>
+      <li>Jinxuan</li>
+    </ul>
+  </li>
+  <li>Anime:
+    <ul>
+      <li>Most things: Shonen, Seinen, and Shojo all work</li>
+    </ul>
+  </li>
+  <li>Rock Climbing:
+    <ul>
+      <li>Especially Bouldering</li>
+    </ul>
+  </li>
+</ul>
+
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
