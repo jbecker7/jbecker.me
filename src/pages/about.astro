@@ -1,252 +1,272 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<BaseLayout title="About | Jonathan Becker" description="About Jonathan Becker Lorem Ipsum">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for checking out my website! Look below to read more about me."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jonathan Becker at work with a colleague"
-				/>
-			</Hero>
+<BaseLayout
+  title="About | Jonathan Becker"
+  description="About Jonathan Becker Lorem Ipsum"
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Thanks for checking out my website! Look below to read more about me."
+      >
+        <img
+          width="1553"
+          height="873"
+          src="/assets/at-work.jpg"
+          alt="Jonathan Becker at work with a colleague"
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-					Hi! My name is Jonathan. I'm a rising senior at Claremont McKenna College looking for
-					New Grad positions for after I graduate. I'm passionate about developing good software,
-					and I particularly enjoy the process of building all components of something from
-					scratch and seeing how they come together.
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p>
+            Hi! My name is Jonathan. I graduated in December 2023 from Claremont
+            McKenna College with a dual degree in International Relations and
+            Chinese, along with a sequence in Computer Science. This spring I
+            will be attending the NYU Bridge Program to sharpen my skills, after
+            which I hope to go on to a CS Master's Program in the fall to
+            solidify my CS education. I'm interested in any and all internship
+            or part-time SWE opportunities. As an aspiring engineer, I'm
+            particularly passionate about the process of building small
+            components of projects from scratch and putting them together to
+            create something more complex.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Experience</h2>
+        <div class="content">
+          <ul>
+            <li>Chorus Sleep: Software Engineer Intern</li>
+            <li>Dasion: Software Engineer Intern</li>
+            <li>Clocky: Web Development/ECommerce Intern</li>
+            <li>
+              Claremont McKenna College:
+              <ul>
+                <li>Algorithms Research Assistant</li>
+                <li>Tutor (Data Structures and Algorithms, Intro CS)</li>
+              </ul>
+            </li>
+            <li>Pomona College: Student Software Developer</li>
+            <li>Harvey Mudd College: Grader/Tutor (Intro CS)</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <p>Claremont McKenna College (2020-2023)</p>
+          Relevant Courework:<ul>
+            <li>Graph Algorithms</li>
+            <li>Data Structures</li>
+            <li>Machine Learning</li>
+            <li>Discrete Mathematics</li>
+            <li>Computer Science for Insight</li>
+            <li>Computer Science Colloquium</li>
+            <li>Programming Practicum</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="content">
+          <h5>Languages:</h5>
+          <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Go</li>
+            <li>Java</li>
+            <li>Swift</li>
+            <li>Dart</li>
+            <li>Bash</li>
+            <li>Fish</li>
+            <li>HTML/CSS/Markdown</li>
+          </ul>
 
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Experience</h2>
-				<div class="content">
-					<ul>
-					<li> Chorus Sleep: Software Engineer Intern </li>
-					<li> Dasion: Software Engineer Intern </li>
-					<li> Clocky: Web Development/ECommerce Intern </li>
-					<li> Claremont McKenna College: Algorithms Research Assistant </li>
-					<li> Harvey Mudd College: Grader/Tutor (Intro CS, Computing Practices, Projects, and People, CS Clinic)</li>
+          <h5>Frameworks:</h5>
+          <ul>
+            <li>React</li>
+            <li>Astro</li>
+            <li>Vue</li>
+            <li>Flutter</li>
+          </ul>
 
+          <h5>Technologies:</h5>
+          <ul>
+            <li>Git</li>
+            <li>Vim/NeoVim</li>
+            <li>GitHub/GitLab</li>
+            <li>VSCode/VSCodium</li>
+            <li>Sublime Text</li>
+            <li>XCode</li>
+            <li>Docker</li>
+            <li>Postman</li>
+            <li>VirtualBox</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Hobbies/Interests</h2>
+        <div class="content">
+          <ul>
+            <li>
+              History:
+              <ul>
+                <li>Qing China</li>
+                <li>European Age of Enlightenment</li>
+              </ul>
+            </li>
+            <li>
+              Philosophy:
+              <ul>
+                <li>Stoicism</li>
+                <li>Nietzsche</li>
+                <li>Camus</li>
+              </ul>
+            </li>
+            <li>
+              Reading:
+              <ul>
+                <li>Haruki Murakami</li>
+                <li>Peter Hessler</li>
+                <li>David Foster Wallace</li>
+              </ul>
+            </li>
+            <li>
+              Music:
+              <ul>
+                <li>Korean Trot Music</li>
+                <li>New Wave Music</li>
+                <li>City Pop</li>
+                <li>Baroque</li>
+                <li>KPop</li>
+              </ul>
+            </li>
+            <li>
+              Language Learning:
+              <ul>
+                <li>Chinese (Full Working Proficiency)</li>
+                <li>Spanish (Full Working Proficiency)</li>
+                <li>Korean (Intermediate)</li>
+                <li>Future: Manchu</li>
+              </ul>
+            </li>
+            <li>
+              Gaming:
+              <ul>
+                <li>Persona</li>
+                <li>Zelda</li>
+                <li>Mother 3</li>
+                <li>Pokemon</li>
+              </ul>
+            </li>
+            <li>
+              Food:
+              <ul>
+                <li>
+                  煲仔饭/claypot rice/li>
+                  <li>酸菜白肉/Chinese sauerkraut pork</li>
+                  <li>烤冷面</li>
+                </li>
+              </ul>
+              <li>
+                Coffee:
+                <ul>
+                  <li>Pour Over</li>
+                  <li>Espresso</li>
+                </ul>
+              </li>
+              <li>
+                Tea:
+                <ul>
+                  <li>Oolong</li>
+                </ul>
+              </li>
+              <li>
+                Anime:
+                <ul>
+                  <li>Most things: Shonen, Seinen, and Shojo all work</li>
+                </ul>
+              </li>
+              <li>
+                Rock Climbing:
+                <ul>
+                  <li>Especially Bouldering</li>
+                </ul>
+              </li>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <ContactCTA />
+    </main>
+  </div>
 
+  <style>
+    .about {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+    }
 
-					</ul>
-				</div>
+    img {
+      margin-top: 1.5rem;
+      border-radius: 1.5rem;
+      box-shadow: var(--shadow-md);
+    }
 
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      color: var(--gray-200);
+    }
 
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Claremont McKenna College (2020-2024)</p>
-					Relevant Courework:<ul>
-					<li>Graph Algorithms</li>
-  <li>Data Structures</li>
-  <li>Machine Learning</li>
-  <li>Discrete Mathematics</li>
-  <li>Computer Science for Insight</li>
-  <li>Computer Science Colloquium</li>
-  <li>Programming Practicum</li>
-</ul>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<h5>Languages:</h5>
-<ul>
-  <li>Python</li>
-  <li>JavaScript</li>
-  <li>TypeScript</li>
-  <li>HTML/CSS/Markdown</li>
-  <li>Go</li>
-  <li>Java</li>
-  <li>Swift</li>
-  <li>Bash</li>
-  <li>Fish</li>
-  <li>PostgreSQL</li>
-</ul>
+    .section-title {
+      grid-column-start: 1;
+      font-size: var(--text-xl);
+      color: var(--gray-0);
+    }
 
-<h5>Frameworks:</h5>
-<ul>
-  <li>React</li>
-  <li>Astro</li>
-  <li>Vue</li>
-</ul>
+    .content {
+      grid-column: 2 / 4;
+    }
 
-<h5>Technologies:</h5>
-<ul>
-  <li>Git</li>
-  <li>Vim/NeoVim</li>
-  <li>GitHub</li>
-  <li>VSCode/VSCodium</li>
-  <li>Sublime Text</li>
-  <li>XCode</li>
-  <li>Docker</li>
-  <li>Postman</li>
-  <li>VirtualBox</li>
-</ul>
+    .content :global(a) {
+      text-decoration: 1px solid underline transparent;
+      text-underline-offset: 0.25em;
+      transition: text-decoration-color var(--theme-transition);
+    }
 
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Hobbies/Interests</h2>
-				<div class="content">
-					<ul>
-  <li>History:
-    <ul>
-      <li>Qing China</li>
-      <li>European Age of Enlightenment</li>
-    </ul>
-  </li>
-  <li>Philosophy:
-    <ul>
-      <li>Stoicism</li>
-      <li>Nietzsche</li>
-      <li>Camus</li>
-    </ul>
-  </li>
-  <li>International Relations:
-    <ul>
-      <li>East Asia especially</li>
-    </ul>
-  </li>
-  <li>Reading:
-    <ul>
-      <li>Murakami</li>
-      <li>Peter Hessler</li>
-      <li>David Foster Wallace</li>
-    </ul>
-  </li>
-  <li>Music:
-    <ul>
-      <li>Korean Trot Music</li>
-      <li>New Wave Music</li>
-      <li>City Pop</li>
-      <li>Baroque</li>
-      <li>KPop</li>
-    </ul>
-  </li>
-  <li>Language Learning:
-    <ul>
-      <li>Chinese</li>
-      <li>Korean</li>
-      <li>Spanish</li>
-    </ul>
-  </li>
-  <li>Gaming:
-    <ul>
-      <li>Persona</li>
-      <li>Zelda</li>
-      <li>Mother</li>
-      <li>Pokemon</li>
-    </ul>
-  </li>
-  <li>Food:
-    <ul>
-      <li>煲仔饭/claypot rice is my favorite</li>
-    </ul>
-  </li>
-  <li>Coffee:
-    <ul>
-      <li>Pour Over</li>
-      <li>Espresso</li>
-    </ul>
-  </li>
-  <li>Tea:
-    <ul>
-      <li>Jinxuan</li>
-    </ul>
-  </li>
-  <li>Anime:
-    <ul>
-      <li>Most things: Shonen, Seinen, and Shojo all work</li>
-    </ul>
-  </li>
-  <li>Rock Climbing:
-    <ul>
-      <li>Especially Bouldering</li>
-    </ul>
-  </li>
-</ul>
+    .content :global(a:hover),
+    .content :global(a:focus) {
+      text-decoration-color: currentColor;
+    }
 
-				</div>
-			</section>
-		</main>
+    @media (min-width: 50em) {
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 60% 1fr;
+      }
 
-		<ContactCTA />
-	</div>
+      .about > :global(:first-child) {
+        grid-column-start: 2;
+      }
+
+      section {
+        display: contents;
+        font-size: var(--text-lg);
+      }
+    }
+  </style>
 </BaseLayout>
-
-<style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
-
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
-
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
-
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
-
-	.content {
-		grid-column: 2 / 4;
-	}
-
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
-
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
-
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
-
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
-
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
-</style>
