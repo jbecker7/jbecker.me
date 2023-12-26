@@ -172,101 +172,99 @@ import Hero from "../components/Hero.astro";
             <li>
               Food:
               <ul>
-                <li>
-                  煲仔饭/claypot rice/li>
-                  <li>酸菜白肉/Chinese sauerkraut pork</li>
-                  <li>烤冷面</li>
-                </li>
+                <li>煲仔饭/claypot rice</li>
+                <li>酸菜白肉/Chinese sauerkraut pork</li>
+                <li>烤冷面</li>
               </ul>
-              <li>
-                Coffee:
-                <ul>
-                  <li>Pour Over</li>
-                  <li>Espresso</li>
-                </ul>
-              </li>
-              <li>
-                Tea:
-                <ul>
-                  <li>Oolong</li>
-                </ul>
-              </li>
-              <li>
-                Anime:
-                <ul>
-                  <li>Most things: Shonen, Seinen, and Shojo all work</li>
-                </ul>
-              </li>
-              <li>
-                Rock Climbing:
-                <ul>
-                  <li>Especially Bouldering</li>
-                </ul>
-              </li>
+            </li>
+            <li>
+              Coffee:
+              <ul>
+                <li>Pour Over</li>
+                <li>Espresso</li>
+              </ul>
+            </li>
+            <li>
+              Tea:
+              <ul>
+                <li>Oolong</li>
+              </ul>
+            </li>
+            <li>
+              Anime:
+              <ul>
+                <li>Most things: Shonen, Seinen, and Shojo all work</li>
+              </ul>
+            </li>
+            <li>
+              Rock Climbing:
+              <ul>
+                <li>Especially Bouldering</li>
+              </ul>
             </li>
           </ul>
         </div>
       </section>
-
-      <ContactCTA />
     </main>
-  </div>
 
-  <style>
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
     .about {
-      display: flex;
-      flex-direction: column;
-      gap: 3.5rem;
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
     }
 
-    img {
-      margin-top: 1.5rem;
-      border-radius: 1.5rem;
-      box-shadow: var(--shadow-md);
+    .about > :global(:first-child) {
+      grid-column-start: 2;
     }
 
     section {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      color: var(--gray-200);
+      display: contents;
+      font-size: var(--text-lg);
     }
-
-    .section-title {
-      grid-column-start: 1;
-      font-size: var(--text-xl);
-      color: var(--gray-0);
-    }
-
-    .content {
-      grid-column: 2 / 4;
-    }
-
-    .content :global(a) {
-      text-decoration: 1px solid underline transparent;
-      text-underline-offset: 0.25em;
-      transition: text-decoration-color var(--theme-transition);
-    }
-
-    .content :global(a:hover),
-    .content :global(a:focus) {
-      text-decoration-color: currentColor;
-    }
-
-    @media (min-width: 50em) {
-      .about {
-        display: grid;
-        grid-template-columns: 1fr 60% 1fr;
-      }
-
-      .about > :global(:first-child) {
-        grid-column-start: 2;
-      }
-
-      section {
-        display: contents;
-        font-size: var(--text-lg);
-      }
-    }
-  </style>
-</BaseLayout>
+  }
+</style>
